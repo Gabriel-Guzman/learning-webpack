@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>learn-firebase</title>
-  </head>
-  <body>
+</head>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCK-ZFqwsoi-ReHDfbN0_i2NIzwDo0AujQ",
+        authDomain: "learn-firebase-f93a3.firebaseapp.com",
+        databaseURL: "https://learn-firebase-f93a3.firebaseio.com",
+        projectId: "learn-firebase-f93a3",
+        storageBucket: "learn-firebase-f93a3.appspot.com",
+        messagingSenderId: "40498682439"
+    };
+    firebase.initializeApp(config);
+
+</script>
+
+<body>
     <div id="app"></div>
     <script src="/dist/build.js"></script>
-  </body>
+</body>
+
 </html>

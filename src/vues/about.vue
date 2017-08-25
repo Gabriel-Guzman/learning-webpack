@@ -3,6 +3,8 @@
         <p>
             {{msg}}
         </p>
+        
+        <input type="checkbox" v-model="checked">
 
     </div>
 </template>
@@ -11,7 +13,13 @@
     export default {
         data() {
             return {
-                msg: 'Hello world!'
+                msg: 'Hello world!',
+                checked: false
+            }
+        },
+        watch: {
+            checked(){
+                console.log("now " + this.checked)
             }
         }
     }
